@@ -3,11 +3,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-# Define the API URLs for LinkedIn, Naukri, and Glassdoor
-LINKEDIN_API_URL = "http://localhost:8000/linkedin/jobs/"  # Replace with your LinkedIn API endpoint
-NAUKRI_API_URL = "http://localhost:8000/naukri/jobs/"       # Replace with your Naukri API endpoint
-GLASSDOOR_API_URL = "http://localhost:8000/glassdoor/jobs/"  # Replace with your Glassdoor API endpoint
-
+LINKEDIN_API_URL = "https://jobapi-nu.vercel.app/linkedin/jobs/"
+NAUKRI_API_URL = "https://jobapi-nu.vercel.app/naukri/jobs/"
+GLASSDOOR_API_URL = "https//jobapi-nu.vercel.app/glassdoor/jobs/"
 class IntegratedJobsView(APIView):
     
     def get(self, request):
